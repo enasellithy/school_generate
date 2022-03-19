@@ -11,15 +11,15 @@ https://startbootstrap.com/template/sb-admin
 - composer install --ignore-platform-reqs
 - php artisan key:generate
 - edit .env info
-#DB_DATABASE=troylab
-#DB_USERNAME=root
-#DB_PASSWORD=
-#MAIL_MAILER=smtp
-#MAIL_HOST=mailhog
-#MAIL_PORT=1025
-#MAIL_USERNAME=null
-#MAIL_PASSWORD=null
-#MAIL_ENCRYPTION=null
+- #DB_DATABASE=troylab
+- #DB_USERNAME=root
+- #DB_PASSWORD=
+- #MAIL_MAILER=smtp
+- #MAIL_HOST=mailhog
+- #MAIL_PORT=1025
+- #MAIL_USERNAME=null
+- #MAIL_PASSWORD=null
+- #MAIL_ENCRYPTION=null
 - php artisan serv
 - admin login info
 - email admin@mail.com

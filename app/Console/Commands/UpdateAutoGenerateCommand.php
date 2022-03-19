@@ -1,20 +1,20 @@
 <?php
 
-namespace App\Traits;
+namespace App\Console\Commands;
 
 use App\Models\School;
 use App\Models\Student;
+use Illuminate\Console\Command;
 
-trait IncrementTraits
+class UpdateAutoGenerateCommand extends Command
 {
-    public function auto_generate()
-    {
+    protected $signature = 'auto:number';
 
-    }
+    protected $description = 'Update Order Student';
 
-    public function auto_generate0()
+    public function handle()
     {
-        foreach(School::get() as $v){
+        foreach (School::get() as $v){
             $count = Student::where('school_id',$v->id)->orderBy('id','asc')->get();
             for($i = 1; $i<$count->count(); $i++){
                 foreach ($count as $item){
@@ -24,11 +24,6 @@ trait IncrementTraits
                 }
             }
         }
-    }
-
-    public function remove_order($id){
-        return Student::where('id',$id)->update([
-            'order' => 0.0
-        ]);
+        return $this->info('Update order for students');
     }
 }
