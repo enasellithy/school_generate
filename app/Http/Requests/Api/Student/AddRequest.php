@@ -1,0 +1,32 @@
+<?php
+
+namespace App\Http\Requests\Api\Student;
+
+use Illuminate\Contracts\Validation\Validator;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Http\Exceptions\HttpResponseException;
+
+class AddRequest extends FormRequest
+{
+    public function authorize()
+    {
+        return true;
+    }
+
+    public function rules()
+    {
+        return [
+            'name' => 'required|string|min:4|max:25',
+            'school_id' => 'numeric|required|exists:schools,id',
+        ];
+    }
+
+    protected function failedValidation(Validator $validator)
+    {
+        throw new HttpResponseException(response()->json([
+            'status' => false,
+            'message' => 'error',
+            'data' => $validator->errors()
+        ], 200));
+    }
+}

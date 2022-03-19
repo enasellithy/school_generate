@@ -1,0 +1,628 @@
+{
+	"info": {
+		"_postman_id": "713db8e8-dedd-407f-ad50-d90799997b92",
+		"name": "school_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "all student",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "localhost:8000/api/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "all student",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 00:59:43 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 00:59:43 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": {\n        \"current_page\": 1,\n        \"data\": [\n            {\n                \"id\": 53,\n                \"name\": \"Dr. Sven Greenfelder V\",\n                \"order\": 2,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 249,\n                \"name\": \"Ms. Sasha Rempel V\",\n                \"order\": 24,\n                \"school_id\": 10,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 58,\n                \"name\": \"Trenton Howe\",\n                \"order\": 6,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 59,\n                \"name\": \"Mrs. Gudrun Rutherford PhD\",\n                \"order\": 7,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 61,\n                \"name\": \"Benton Gerhold II\",\n                \"order\": 9,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 62,\n                \"name\": \"Kirstin Morissette Sr.\",\n                \"order\": 10,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 65,\n                \"name\": \"Oral Smith\",\n                \"order\": 13,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 66,\n                \"name\": \"Jonatan Beatty\",\n                \"order\": 14,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 68,\n                \"name\": \"Mrs. Jeanette Flatley\",\n                \"order\": 16,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 69,\n                \"name\": \"Jovanny Reilly\",\n                \"order\": 17,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 73,\n                \"name\": \"Leora Hill I\",\n                \"order\": 21,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 74,\n                \"name\": \"Prince Yost\",\n                \"order\": 22,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 78,\n                \"name\": \"Gabriella Roob\",\n                \"order\": 3,\n                \"school_id\": 4,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 75,\n                \"name\": \"Sophia McCullough\",\n                \"order\": 23,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 54,\n                \"name\": \"Ludwig Schiller\",\n                \"order\": 3,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 70,\n                \"name\": \"Aliyah Johnston\",\n                \"order\": 18,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 55,\n                \"name\": \"Mr. Kim Mayer II\",\n                \"order\": 4,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 63,\n                \"name\": \"Keon Corkery\",\n                \"order\": 11,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 71,\n                \"name\": \"Nia Emmerich\",\n                \"order\": 19,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 77,\n                \"name\": \"Ms. Destini Turcotte\",\n                \"order\": 2,\n                \"school_id\": 4,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 56,\n                \"name\": \"Nash Little\",\n                \"order\": 5,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 60,\n                \"name\": \"Landen Bartoletti\",\n                \"order\": 8,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 64,\n                \"name\": \"Zula Becker\",\n                \"order\": 12,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:28.000000Z\"\n            },\n            {\n                \"id\": 67,\n                \"name\": \"Dr. Crystel Cole\",\n                \"order\": 15,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            },\n            {\n                \"id\": 72,\n                \"name\": \"Ike Russel\",\n                \"order\": 20,\n                \"school_id\": 3,\n                \"deleted_at\": null,\n                \"created_at\": \"2022-03-19T00:31:43.000000Z\",\n                \"updated_at\": \"2022-03-19T00:39:29.000000Z\"\n            }\n        ],\n        \"first_page_url\": \"http://localhost:8000/api/student?page=1\",\n        \"from\": 1,\n        \"last_page\": 10,\n        \"last_page_url\": \"http://localhost:8000/api/student?page=10\",\n        \"links\": [\n            {\n                \"url\": null,\n                \"label\": \"&laquo; Previous\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=1\",\n                \"label\": \"1\",\n                \"active\": true\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=2\",\n                \"label\": \"2\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=3\",\n                \"label\": \"3\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=4\",\n                \"label\": \"4\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=5\",\n                \"label\": \"5\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=6\",\n                \"label\": \"6\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=7\",\n                \"label\": \"7\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=8\",\n                \"label\": \"8\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=9\",\n                \"label\": \"9\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=10\",\n                \"label\": \"10\",\n                \"active\": false\n            },\n            {\n                \"url\": \"http://localhost:8000/api/student?page=2\",\n                \"label\": \"Next &raquo;\",\n                \"active\": false\n            }\n        ],\n        \"next_page_url\": \"http://localhost:8000/api/student?page=2\",\n        \"path\": \"http://localhost:8000/api/student\",\n        \"per_page\": 25,\n        \"prev_page_url\": null,\n        \"to\": 25,\n        \"total\": 247\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "store student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "enas",
+							"type": "text"
+						},
+						{
+							"key": "school_id",
+							"value": "2",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/student",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/api/student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "localhost:8000/api/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:00:54 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:00:54 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"error\",\n    \"data\": {\n        \"name\": [\n            \"The name field is required.\"\n        ],\n        \"school_id\": [\n            \"The school id field is required.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "localhost:8000/api/student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "enas",
+									"type": "text"
+								},
+								{
+									"key": "school_id",
+									"value": "1000",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:04:03 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:04:03 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "56"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": false,\n    \"message\": \"error\",\n    \"data\": {\n        \"school_id\": [\n            \"The selected school id is invalid.\"\n        ]\n    }\n}"
+				},
+				{
+					"name": "localhost:8000/api/student",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "enas",
+									"type": "text"
+								},
+								{
+									"key": "school_id",
+									"value": "2",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/student",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:06:04 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:06:04 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"Hello Aoi\",\n    \"school_id\": \"10\",\n    \"student_id\": 11\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/student/update",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"update"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/api/student/update",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"warning": "This is a duplicate header and will be overridden by the Content-Type header generated by Postman.",
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Hello Aoi\",\n    \"school_id\": \"10\",\n    \"student_id\": 11\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/student/update",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student",
+								"update"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:28:48 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:28:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": \"\"\n}"
+				}
+			]
+		},
+		{
+			"name": "localhost:8000/api/student/delete",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "student_id",
+							"value": "100",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "localhost:8000/api/student/delete",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"student",
+						"delete"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "localhost:8000/api/student/delete",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "student_id",
+									"value": "100",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/student/delete",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"student",
+								"delete"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "localhost:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:34:59 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 19 Mar 2022 01:34:59 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.0.16"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"status\": true,\n    \"data\": \"\"\n}"
+				}
+			]
+		}
+	]
+}
